@@ -54,26 +54,33 @@
     </div>
 
     <!-- width: 100%; max-width: medium; padding: 6px; padding-top: 12 -->
-    <form class="w-full max-w-full p-6 pt-12 red-borderx">
+    <form class="w-full max-w-full p-6 pt-12 red-border">
         <!-- margin:left/margin-left: -3;  -->
-        <div class="flex flex-wrap justify-center -mx-3 mb-6 red-borderx">
+        <div class="flex flex-wrap -mx-3 mb-3 red-border items-center">
             <!-- width: 100% md:width: 50%;  padding-left/right: 6; md:margin-bottom: 0; -->
-            <div class="md:ml-auto md:w-1/2 px-3 mb-6 md:mb-0">
+            <div class="w-1/4 md:mb-0 ml-auto">
                 <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-first-name">
-                    Location
+                    Date
                 </label>
-                <input class="std-input" id="grid-first-name" type="text" placeholder="Location">                
             </div>
-            <div class="md:mr-auto md:w-1/2 px-3 red-borderx" >
-                <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-last-name">
-                    Work order number
+            <div class="md:w-1/4 md:mb-0">
+                <input class="std-input" id="grid-first-name" type="text" placeholder="Location">
+            </div>
+            <div class="md:w-1/4 md:mb-0 ml-auto">
+                <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-first-name">
+                    Commercial applicator license
                 </label>
-                <input class="std-input" id="grid-last-name" type="text" placeholder="Work order number">
+            </div>
+            <div class="md:w-1/4 md:mb-0">
+                <input class="std-input" id="grid-first-name" type="text" placeholder="Location">
             </div>
         </div>
+
+
+
         <!-- display: flex; flex: end (which is left justified); margin-left/right: -3; margin-bont: 6;-->
-        <div class="flex justify-end -mx-3 red-borderx">
-            <div class="px-3 red-borderx">
+        <div class="flex justify-end -mx-3 red-border">
+            <div class="px-3 red-border">
                 <button class="btn-primary" type="button">
                     Continue
                 </button>

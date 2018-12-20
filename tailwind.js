@@ -49,7 +49,8 @@ let colors = {
   'hl-grey': '#4c4d4f',
   'hl-grey-light': '#98999b',
   'hl-brand': '#820024',
-  'hl-secondary': '#00825e',
+  'hl-secondary': '#4dc0b5',
+  'hl-secondary-light': '#72cdc4',
   'hl-neutral': '#f5f4e2',
 
   'black': '#22292f',
