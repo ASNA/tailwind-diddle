@@ -550,7 +550,7 @@ table {
   }
 }
 
-/** 
+/**
   Custom elements
 */
 
@@ -566,6 +566,23 @@ table {
 }
 
 .btn-primary:hover {
+  background-color: #2779bd;
+}
+
+.anchor-btn-primary {
+  text-decoration: none;
+  background-color: #3490dc;
+  color: #fff;
+  font-weight: 700;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: .25rem;
+  display: block;
+}
+
+.anchor-btn-primary:hover {
   background-color: #2779bd;
 }
 
@@ -597,7 +614,7 @@ table {
   border: 1px solid red;
 }
 
-/** 
+/**
   End of custom elements
 */
 
