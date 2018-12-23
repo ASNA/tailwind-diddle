@@ -25,28 +25,37 @@
   Custom elements
 */
 
- .btn-primary {
-    @apply bg-blue text-white font-bold py-2 px-4 rounded;
+ .btn {
+    @apply bg-blue font-bold py-2 px-4 rounded;
+  }
+
+  .btn-primary {
+    @apply bg-blue text-white;
   }
 
   .btn-primary:hover {
-    @apply bg-blue-dark;
+    @apply bg-blue-dark text-white;
+  }
+
+  .anchor-btn {
+    @apply no-underline bg-blue font-bold py-2 px-4 rounded;
   }
 
   .anchor-btn-primary {
-    @apply no-underline bg-blue text-white font-bold py-2 px-4 rounded block;
+    @apply bg-blue text-white;
   }
 
   .anchor-btn-primary:hover {
-    @apply bg-blue-dark;
+    @apply bg-blue-dark text-white;
   }
 
+
   .std-input {
-      @apply appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 leading-tight;
+      @apply appearance-none w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 leading-tight border-grey;
   }
 
   .std-input:focus {
-    @apply outline-none bg-white border-grey;
+    @apply outline-none bg-white border-blue;
    }
 
    .red-borderxxx {

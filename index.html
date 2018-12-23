@@ -10,6 +10,8 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <link href="tailwind7.3.css" rel="stylesheet">
+    <link href="breadcrumb.css" rel="stylesheet">
+
 
     <link rel="stylesheet" href="index.css">
 </head>
@@ -30,7 +32,7 @@
         </div>
     </nav>
 
-    <nav class="flex items-center justify-between flex-wrap bg-hl-secondary p-3">
+    <!-- <nav class="flex items-center justify-between flex-wrap bg-hl-secondary p-3">
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
             <div class="text-sm lg:flex-grow">
                 <span class="text-lg block mt-2 lg:inline-block lg:inline-block lg:mt0 text-hl-grey-darker mr-4">Customer application record</span>
@@ -48,10 +50,20 @@
                 </a>
             </div>
         </nav>
-    </nav>
+    </nav> -->
+
+
     <div class="w-full block bg-hl-secondary-light p-2">
         Location: 11  Work order: 47421
     </div>
+    <ul class="breadcrumb">
+        <li><a href="#">Customer</a></li>
+        <li><a href="#">Data entry</a></li>
+        <li><a href="#">Items</a></li>
+        <!-- <li><a id="bread-crumb-4" href="#">Camper Vans</a></li>
+        <li><a id="bread-crumb-5" href="#">1989 VW Westfalia Vanagon</a></li> -->
+    </ul>
+
 
     <!-- width: 100%; max-width: medium; padding: 6px; padding-top: 12 -->
     <form class="w-full max-w-full p-6 pt-12 red-borderx">
@@ -74,20 +86,8 @@
         <!-- display: flex; flex: end (which is left justified); margin-left/right: -3; margin-bont: 6;-->
         <div class="flex justify-end -mx-3 red-borderx">
             <div class="px-3 red-borderx">
-                <button class="btn-primary" type="button">
-                    Continue
-                </button>
-                <br>
-                <br>
-                <a href="customer.html" class="bg-blue text-white font-bold
-                                               py-2 px-4 rounded
-                                               inline-block
-                                               no-underline
-                                               border-solid">Continue</a>
-
-                <br>
-                <br>
-                <a href="customer.html" class="anchor-btn-primary">Continue</a>
+                <a href="customer.html" class="anchor-btn anchor-btn-primary">Continue</a>
+                <a href="customer.html" class="anchor-btn anchor-btn-primary">Continue</a>
             </div>
         </div>
 

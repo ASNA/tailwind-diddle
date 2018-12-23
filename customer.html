@@ -10,6 +10,8 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <link href="tailwind7.3.css" rel="stylesheet">
+    <link href="breadcrumb.css" rel="stylesheet">
+    <link href="two-column-input.css" rel="stylesheet">
 
     <link rel="stylesheet" href="index.css">
 </head>
@@ -30,7 +32,7 @@
         </div>
     </nav>
 
-    <nav class="flex items-center justify-between flex-wrap bg-hl-secondary p-3">
+    <!-- <nav class="flex items-center justify-between flex-wrap bg-hl-secondary p-3">
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
             <div class="text-sm lg:flex-grow">
                 <span class="text-lg block mt-2 lg:inline-block lg:inline-block lg:mt0 text-hl-grey-darker mr-4">Customer application record</span>
@@ -45,47 +47,137 @@
                 </a>
                 <a href="#responsive-header" class="block mt-2 lg:inline-block lg:mt-0 text-hl-grey hover:text-white mr-8">
                     Items
-                </a>    
+                </a>
             </div>
-        </nav>            
-    </nav>        
+        </nav>
+    </nav> -->
+
     <div class="w-full block bg-hl-secondary-light p-2">
         Location: 11  Work order: 47421
     </div>
+    <ul class="breadcrumb">
+        <li><a href="#">Customer</a></li>
+        <li><a href="#">Data entry</a></li>
+        <li><a href="#">Items</a></li>
+        <!-- <li><a id="bread-crumb-4" href="#">Camper Vans</a></li>
+        <li><a id="bread-crumb-5" href="#">1989 VW Westfalia Vanagon</a></li> -->
+    </ul>
 
-    <!-- width: 100%; max-width: medium; padding: 6px; padding-top: 12 -->
-    <form class="w-full max-w-full p-6 pt-12 red-border">
-        <!-- margin:left/margin-left: -3;  -->
-        <div class="flex flex-wrap -mx-3 mb-3 red-border items-center">
-            <!-- width: 100% md:width: 50%;  padding-left/right: 6; md:margin-bottom: 0; -->
-            <div class="w-1/4 md:mb-0 ml-auto">
-                <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-first-name">
-                    Date
-                </label>
-            </div>
-            <div class="md:w-1/4 md:mb-0">
-                <input class="std-input" id="grid-first-name" type="text" placeholder="Location">
-            </div>
-            <div class="md:w-1/4 md:mb-0 ml-auto">
-                <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-first-name">
-                    Commercial applicator license
-                </label>
-            </div>
-            <div class="md:w-1/4 md:mb-0">
-                <input class="std-input" id="grid-first-name" type="text" placeholder="Location">
-            </div>
+    <div class="form-container">
+        <div class="customer">
+            <div class="value-pair">
+                <div class="item-label">
+                   Date
+                </div>
+                <div class="item-input">
+                   <input class="std-input" type="textbox" placeholder="Date"/>
+                </div>
+             </div>
+             <div class="value-pair">
+                <div class="item-label">
+                   Applicator lic
+                </div>
+                <div class="item-input">
+                   <input class="std-input" type="textbox" placeholder="Applicator license"/>
+                </div>
+             </div>
+             <div class="value-pair">
+                <div class="item-label">
+                   Salesperson
+                </div>
+                <div class="item-input">
+                   <input class="std-input" type="textbox" placeholder="Salesperson"/>
+                </div>
+             </div>
+             <div class="value-pair">
+                <div class="item-label">
+                   Customer
+                </div>
+                <div class="item-input">
+                   <input class="std-input" type="textbox" placeholder="Customer"/>
+                </div>
+             </div>
+             <div class="value-pair">
+                <div class="item-label">
+                   Address
+                </div>
+                <div class="item-input">
+                   <input class="std-input" type="textbox" placeholder="Address"/>
+                </div>
+             </div>
+             <div class="value-pair">
+                <div class="item-label">
+                   County
+                </div>
+                <div class="item-input">
+                   <input class="std-input" type="textbox" placeholder="County"/>
+                </div>
+             </div>
+             <div class="value-pair">
+                <div class="item-label">
+                   Township
+                </div>
+                <div class="item-input">
+                   <input class="std-input" type="textbox" placeholder="Township"/>
+                </div>
+             </div>
+             <div class="value-pair">
+                <div class="item-label">
+                   Section
+                </div>
+                <div class="item-input">
+                   <input class="std-input" type="textbox" placeholder="Section"/>
+                </div>
+             </div>
         </div>
+        <div class="info">
+            <div class="value-pair">
+                <div class="item-label">
+                   Commodity
+                </div>
+                <div class="item-input">
+                   <input class="std-input" type="textbox" placeholder="Commodity"/>
+                </div>
+             </div>
+             <div class="value-pair">
+                <div class="item-label">
+                   Till acres
+                </div>
+                <div class="item-input">
+                   <input class="std-input" type="textbox" placeholder="Till acres"/>
+                </div>
+             </div>
+             <div class="value-pair">
+                <div class="item-label">
+                   Field
+                </div>
+                <div class="item-input">
+                   <input class="std-input" type="textbox" placeholder="Field"/>
+                </div>
+             </div>
+             <div class="value-pair">
+                <div class="item-label">
+                   Traits
+                </div>
+                <div class="item-input">
+                   <input class="std-input" type="textbox" placeholder="Traits"/>
+                </div>
+             </div>
+        </div>
+    </div>
+    <div style="border: solid 2px purple">
+hello there
+    </div>
+
+    <!-- display: flex; flex: end (which is left justified); margin-left/right: -3; margin-bont: 6;-->
+    <div class="flex justify-end -mx-3 red-border" style="height: 3rem;padding-top: 2rem;">
+        <div class="px-3 red-borderx">
+            <a href="customer.html" class="anchor-btn anchor-btn-primary">Continue</a>
+        </div>
+    </div>
 
 
+</body>
 
-        <!-- display: flex; flex: end (which is left justified); margin-left/right: -3; margin-bont: 6;-->
-        <div class="flex justify-end -mx-3 red-border">
-            <div class="px-3 red-border">
-                <button class="btn-primary" type="button">
-                    Continue
-                </button>
-            </div>
-        </div>            
 
-    </form>
 </html>

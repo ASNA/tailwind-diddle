@@ -554,43 +554,51 @@ table {
   Custom elements
 */
 
-.btn-primary {
+.btn {
   background-color: #3490dc;
-  color: #fff;
   font-weight: 700;
   padding-top: .5rem;
   padding-bottom: .5rem;
   padding-left: 1rem;
   padding-right: 1rem;
   border-radius: .25rem;
+}
+
+.btn-primary {
+  background-color: #3490dc;
+  color: #fff;
 }
 
 .btn-primary:hover {
   background-color: #2779bd;
+  color: #fff;
 }
 
-.anchor-btn-primary {
+.anchor-btn {
   text-decoration: none;
   background-color: #3490dc;
-  color: #fff;
   font-weight: 700;
   padding-top: .5rem;
   padding-bottom: .5rem;
   padding-left: 1rem;
   padding-right: 1rem;
   border-radius: .25rem;
-  display: block;
+}
+
+.anchor-btn-primary {
+  background-color: #3490dc;
+  color: #fff;
 }
 
 .anchor-btn-primary:hover {
   background-color: #2779bd;
+  color: #fff;
 }
 
 .std-input {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  display: block;
   width: 100%;
   background-color: #f1f5f8;
   color: #606f7b;
@@ -602,12 +610,13 @@ table {
   padding-left: 1rem;
   padding-right: 1rem;
   line-height: 1.25;
+  border-color: #b8c2cc;
 }
 
 .std-input:focus {
   outline: 0;
   background-color: #fff;
-  border-color: #b8c2cc;
+  border-color: #3490dc;
 }
 
 .red-borderxxx {
@@ -29629,3 +29638,4 @@ table {
     z-index: auto;
   }
 }
+
