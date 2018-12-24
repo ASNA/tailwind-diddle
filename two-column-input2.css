@@ -1,0 +1,59 @@
+
+div.form-container {
+    margin-top: 2rem;
+    border: solid 1px red;
+}
+
+@media only screen and (max-width : 768px)  {
+    div.form-container {
+        display: grid;
+        grid-template-areas:
+        "top"
+        "bottom";
+    }
+
+    div.customer {
+        grid-area: top;
+    }
+
+    div.info {
+        margin-top: 1rem;
+        grid-area: bottom;
+    }
+}
+
+@media only screen and (min-width : 768px)  {
+    div.form-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    div.customer div.value-pair, div.info div.value-pair {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        /* border: 1px solid red; */
+        align-items: center;
+    }
+
+    .item-label {
+        border: 1px solid green;
+        justify-self: end;
+     }
+
+     .item-input {
+        /* padding-left: 1rem; */
+        justify-self: left;
+        /* margin-right: .5rem; */
+        border: 1px solid blue;
+        width: 100%;
+     }
+
+     .item-input input {
+        width: 90%;
+     }
+
+     input {
+         width: 200px;
+     }
+
+}

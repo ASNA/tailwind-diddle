@@ -1,7 +1,7 @@
 
 div.form-container {
     margin-top: 2rem;
-    border: solid 1px red;
+    /* border: solid 1px red; */
 }
 
 @media only screen and (max-width : 768px)  {
@@ -12,43 +12,59 @@ div.form-container {
         "bottom";
     }
 
-    div.customer {
+    div.data-entry-1 {
         grid-area: top;
     }
 
-    div.info {
+    div.data-entry-2 {
         margin-top: 1rem;
         grid-area: bottom;
     }
 }
 
+
 @media only screen and (min-width : 768px)  {
+
     div.form-container {
+        padding: 3px;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    div.customer div.value-pair, div.info div.value-pair {
-        display: grid;
-        grid-template-columns: 40% 40%;
-        /* border: 1px solid red; */
-        align-items: center;
+    div.data-entry-1 {
+        padding-right: 6px;
+        border-right: 1px solid darkgrey;
     }
 
-    .item-label {
-        /* border: 1px solid green; */
-        justify-self: end;
-     }
+    div.data-entry-2 {
+        padding-right: 6px;
+    }
 
-     .item-input {
-        padding-left: 1rem;
-        justify-self: left;
-        margin-right: .5rem;
-        /* border: 1px solid blue; */
-        width: 100%;
-     }
+    div.data-entry {
+        padding: 2px;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        align-items: end;
+    }
 
-     .item-input input {
-        width: 90%;
-     }
+    div.data-entry textarea.text-area {
+        min-height: 4rem;
+        resize: none;
+        overflow: hidden;
+    }
+
+    div.data-entry .text-area-label {
+        align-self: start;
+    }
+
+    .data-entry label {
+        margin-left: .5rem;
+    }
+
+    .input-error {
+        color: red;
+        padding-left: 8px;
+        display: none;
+    }
+
 }

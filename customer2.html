@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Tailwind 7.3</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link href="tailwind7.3.css" rel="stylesheet">
+    <link href="breadcrumb.css" rel="stylesheet">
+    <link href="two-column-input.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="bg-hl-neutral">
+    <nav class="flex items-center justify-between flex-wrap bg-hl-secondary p-3">
+        <div class="flex items-center flex-no-shrink text-white mr-6">
+            <img class="mr-4" src="assets/images/HeartlandCoop.png" />
+            <span class="text-hl-grey font-semibold text-xl tracking-tight">Helping farmers produce and market profitably</span>
+        </div>
+        <div class="block lg:hidden mt-2">
+            <button class="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-white hover:border-white">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- <nav class="flex items-center justify-between flex-wrap bg-hl-secondary p-3">
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+            <div class="text-sm lg:flex-grow">
+                <span class="text-lg block mt-2 lg:inline-block lg:inline-block lg:mt0 text-hl-grey-darker mr-4">Customer application record</span>
+                <a href="#responsive-header" class="block mt-2 lg:inline-block lg:mt-0 text-hl-grey hover:text-white mr-4">
+                    Customer/field info
+                </a>
+                <a href="#responsive-header" class="block mt-2 lg:inline-block lg:mt-0 text-hl-grey hover:text-white mr-4">
+                    Map
+                </a>
+                <a href="#responsive-header" class="block mt-2 lg:inline-block lg:mt-0 text-hl-grey hover:text-white mr-4">
+                    Data entry
+                </a>
+                <a href="#responsive-header" class="block mt-2 lg:inline-block lg:mt-0 text-hl-grey hover:text-white mr-8">
+                    Items
+                </a>
+            </div>
+        </nav>
+    </nav> -->
+
+    <div class="w-full block bg-hl-secondary-light p-2">
+        Location: 11  Work order: 47421
+    </div>
+    <ul class="breadcrumb">
+        <li><a href="#">Customer</a></li>
+        <li><a href="#">Data entry</a></li>
+        <li><a href="#">Items</a></li>
+        <!-- <li><a id="bread-crumb-4" href="#">Camper Vans</a></li>
+        <li><a id="bread-crumb-5" href="#">1989 VW Westfalia Vanagon</a></li> -->
+    </ul>
+
+   <div class="form-container">
+
+
+      <div class="data-entry-1">
+         <div class="data-entry">
+            <label class="text-grey-darker">Date</label>
+            <input type="textbox" class="text-gray-darkest rounded py-1 px-2" placeholder="Date" value="12/20/2018"/>
+        </div>
+        <span class="input-error">The date is incorrect.</span>
+         <div class="data-entry">
+            <label class="text-grey-darker">Applicator <br>License</label>
+            <input type="textbox" class="text-gray-darkest rounded py-1 px-2" placeholder="License" value="03671-002"/>
+         </div>
+         <div class="data-entry">
+            <label class="text-grey-darker">Salesman</label>
+            <input type="textbox" class="text-gray-darkest rounded py-1 px-2" placeholder="Salesman"  value="Tyler Wedge"/>
+         </div>
+         <div class="data-entry">
+            <label class="text-grey-darker">Customer</label>
+            <input type="textbox" class="text-gray-darkest rounded py-1 px-2" placeholder="Customer" value="Elwell, Inc."/>
+         </div>
+         <div class="data-entry">
+            <label class="text-area-label text-grey-darker">Address</label>
+            <textarea class="text-area text-gray-darkest rounded py-1 px-2"
+                      placeholder="Address">Slater&#013;&#010;IA&#013;&#010;50244</textarea>
+         </div>
+         <div class="data-entry">
+            <label class="text-grey-darker">County</label>
+            <input type="textbox" class="text-gray-darkest rounded py-1 px-2" placeholder="County" value="Polk"/>
+         </div>
+         <div class="data-entry">
+            <label class="text-grey-darker">Township</label>
+            <input type="textbox" class="text-gray-darkest rounded py-1 px-2" placeholder="Township" value="Douglas"/>
+         </div>
+         <div class="data-entry">
+            <label class="text-grey-darker">Section</label>
+            <input type="textbox" class="text-gray-darkest rounded py-1 px-2" placeholder="Section" value="8" />
+         </div>
+      </div>
+
+      <div class="data-entry-2">
+         <div class="data-entry">
+            <label class="text-grey-darker">Commodity</label>
+            <input type="textbox" class="text-gray-darkest rounded py-1 px-2" placeholder="Commodity" value="Soybeans"/>
+         </div>
+         <div class="data-entry">
+            <label class="text-grey-darker">Till acres</label>
+            <input type="textbox" class="text-gray-darkest rounded py-1 px-2" placeholder="Till acres" value="143.30"/>
+         </div>
+         <div class="data-entry">
+            <label class="text-grey-darker">Field</label>
+            <input type="textbox" class="text-gray-darkest rounded py-1 px-2" placeholder="Field" value="Elwell Inc Poker Chip"/>
+         </div>
+         <div class="data-entry">
+            <label class="text-grey-darker">Traits</label>
+            <input type="textbox" class="text-gray-darkest rounded py-1 px-2" placeholder="Traits" value=""/>
+         </div>
+      </div>
+
+   </div>
+
+    <!-- display: flex; flex: end (which is left justified); margin-left/right: -3; margin-bont: 6;-->
+    <div class="flex justify-end -mx-3 red-border" style="height: 3rem;padding-top: 2rem;">
+        <div class="px-3 red-borderx">
+            <a href="customer.html" class="anchor-btn anchor-btn-primary">Continue</a>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+
+</html>
