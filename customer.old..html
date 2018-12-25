@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Tailwind 7.3</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link href="tailwind7.3.css" rel="stylesheet">
+    <link href="breadcrumb.css" rel="stylesheet">
+    <link href="two-column-input.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="bg-hl-neutral">
+    <nav class="flex items-center justify-between flex-wrap bg-hl-secondary p-3">
+        <div class="flex items-center flex-no-shrink text-white mr-6">
+            <img class="mr-4" src="assets/images/HeartlandCoop.png" />
+            <span class="text-hl-grey font-semibold text-xl tracking-tight">Helping farmers produce and market profitably</span>
+        </div>
+        <div class="block lg:hidden mt-2">
+            <button class="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-white hover:border-white">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- <nav class="flex items-center justify-between flex-wrap bg-hl-secondary p-3">
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+            <div class="text-sm lg:flex-grow">
+                <span class="text-lg block mt-2 lg:inline-block lg:inline-block lg:mt0 text-hl-grey-darker mr-4">Customer application record</span>
+                <a href="#responsive-header" class="block mt-2 lg:inline-block lg:mt-0 text-hl-grey hover:text-white mr-4">
+                    Customer/field info
+                </a>
+                <a href="#responsive-header" class="block mt-2 lg:inline-block lg:mt-0 text-hl-grey hover:text-white mr-4">
+                    Map
+                </a>
+                <a href="#responsive-header" class="block mt-2 lg:inline-block lg:mt-0 text-hl-grey hover:text-white mr-4">
+                    Data entry
+                </a>
+                <a href="#responsive-header" class="block mt-2 lg:inline-block lg:mt-0 text-hl-grey hover:text-white mr-8">
+                    Items
+                </a>
+            </div>
+        </nav>
+    </nav> -->
+
+    <div class="w-full block bg-hl-secondary-light p-2">
+        Location: 11  Work order: 47421
+    </div>
+    <ul class="breadcrumb">
+        <li><a href="#">Customer</a></li>
+        <li><a href="#">Data entry</a></li>
+        <li><a href="#">Items</a></li>
+        <!-- <li><a id="bread-crumb-4" href="#">Camper Vans</a></li>
+        <li><a id="bread-crumb-5" href="#">1989 VW Westfalia Vanagon</a></li> -->
+    </ul>
+
+    <div class="form-container">
+        <div class="customer">
+            <div class="value-pair">
+                <div class="item-label">
+                   Date
+                </div>
+                <div class="item-input">
+                   <input class="std-input" type="textbox" placeholder="Date"/>
+                </div>
+             </div>
+             <div class="value-pair">
+                <div class="item-label">
+                   Applicator lic
+                </div>
+                <div class="item-input">
+                   <input class="std-input" type="textbox" placeholder="Applicator license"/>
+                </div>
+             </div>
+             <div class="value-pair">
+                <div class="item-label">
+                   Salesperson
+                </div>
+                <div class="item-input">
+                   <input class="std-input" type="textbox" placeholder="Salesperson"/>
+                </div>
+             </div>
+             <div class="value-pair">
+                <div class="item-label">
+                   Customer
+                </div>
+                <div class="item-input">
+                   <input class="std-input" type="textbox" placeholder="Customer"/>
+                </div>
+             </div>
+             <div class="value-pair">
+                <div class="item-label">
+                   Address
+                </div>
+                <div class="item-input">
+                   <input class="std-input" type="textbox" placeholder="Address"/>
+                </div>
+             </div>
+             <div class="value-pair">
+                <div class="item-label">
+                   County
+                </div>
+                <div class="item-input">
+                   <input class="std-input" type="textbox" placeholder="County"/>
+                </div>
+             </div>
+             <div class="value-pair">
+                <div class="item-label">
+                   Township
+                </div>
+                <div class="item-input">
+                   <input class="std-input" type="textbox" placeholder="Township"/>
+                </div>
+             </div>
+             <div class="value-pair">
+                <div class="item-label">
+                   Section
+                </div>
+                <div class="item-input">
+                   <input class="std-input" type="textbox" placeholder="Section"/>
+                </div>
+             </div>
+        </div>
+        <div class="info">
+            <div class="value-pair">
+                <div class="item-label">
+                   Commodity
+                </div>
+                <div class="item-input">
+                   <input class="std-input" type="textbox" placeholder="Commodity"/>
+                </div>
+             </div>
+             <div class="value-pair">
+                <div class="item-label">
+                   Till acres
+                </div>
+                <div class="item-input">
+                   <input class="std-input" type="textbox" placeholder="Till acres"/>
+                </div>
+             </div>
+             <div class="value-pair">
+                <div class="item-label">
+                   Field
+                </div>
+                <div class="item-input">
+                   <input class="std-input" type="textbox" placeholder="Field"/>
+                </div>
+             </div>
+             <div class="value-pair">
+                <div class="item-label">
+                   Traits
+                </div>
+                <div class="item-input">
+                   <input class="std-input" type="textbox" placeholder="Traits"/>
+                </div>
+             </div>
+        </div>
+    </div>
+    <div style="border: solid 2px purple">
+hello there
+    </div>
+
+    <!-- display: flex; flex: end (which is left justified); margin-left/right: -3; margin-bont: 6;-->
+    <div class="flex justify-end -mx-3 red-border" style="height: 3rem;padding-top: 2rem;">
+        <div class="px-3 red-borderx">
+            <a href="customer.html" class="anchor-btn anchor-btn-primary">Continue</a>
+        </div>
+    </div>
+
+
+</body>
+
+
+</html>
