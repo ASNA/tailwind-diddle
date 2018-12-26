@@ -28,7 +28,13 @@ div.form-container {
     div.four-column-container {
         padding: 3px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: .7fr 1fr .7fr 1fr;
+        align-items: center;
+    }
+
+    .js-end {
+        justify-self: end;
+        padding-right: .5rem;
     }
 
     div.form-container {
@@ -48,8 +54,9 @@ div.form-container {
 
     div.data-entry {
         padding: 2px;
+        padding-right: 2rem;
         display: grid;
-        grid-template-columns: 1fr 3fr;
+        grid-template-columns: 2fr 2fr;
         align-items: center;
     }
 
