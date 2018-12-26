@@ -68,69 +68,94 @@
 
       <div class="data-entry-1">
          <div class="data-entry">
-            <label class="text-grey-darker">Date</label>
+            <label class="text-grey-darker">Field</label>
             <select class="py-1 px-2 bg-white rounded">
-                <option class="appearance-none" value="IN">Colorado</option>
-                <option class="appearance-none" value="IN">Georgia</option>
-                <option class="appearance-none" value="IN">Illinois</option>
-                <option class="appearance-none" value="IN">Nevada</option>
-                <option class="appearance-none" value="IN">Alabama</option>
+                <option class="appearance-none" value="IN">Rough</option>
+                <option class="appearance-none" value="IN">Smooth</option>
             </select>
         </div>
          <div class="data-entry">
-            <label class="text-grey-darker">Customer</label>
+            <label class="text-grey-darker">Trash</label>
             <select class="py-1 px-2 bg-white rounded">
-                <option value="IN">Colorado</option>
-                <option value="IN">Georgia</option>
-                <option value="IN">Illinois</option>
-                <option value="IN">Nevada</option>
-                <option value="IN">Alabama</option>
+                <option value="IN">High</option>
+                <option value="IN">Low</option>
             </select>
         </div>
         <div class="data-entry">
-            <label class="text-grey-darker">Customer</label>
+            <label class="text-grey-darker">Moisture</label>
             <select class="py-1 px-2 bg-white rounded">
-                <option value="IN">Colorado</option>
-                <option value="IN">Georgia</option>
-                <option value="IN">Illinois</option>
-                <option value="IN">Nevada</option>
-                <option value="IN">Alabama</option>
+                <option value="IN">Wet</option>
+                <option value="IN">Dry</option>
             </select>
         </div>
         <div class="data-entry">
-            <label class="text-grey-darker">Customer</label>
+            <label class="text-grey-darker">Soil</label>
             <select class="py-1 px-2 bg-white rounded">
-                <option value="IN">Colorado</option>
-                <option value="IN">Georgia</option>
-                <option value="IN">Illinois</option>
-                <option value="IN">Nevada</option>
-                <option value="IN">Alabama</option>
+                <option value="IN">Heavy</option>
+                <option value="IN">Light</option>
+            </select>
+        </div>
+        <div class="data-entry">
+            <label class="text-grey-darker">Humidity</label>
+            <select class="py-1 px-2 bg-white rounded">
+                <option value="IN">High</option>
+                <option value="IN">Low</option>
+            </select>
+        </div>
+        <div class="data-entry">
+            <label class="text-grey-darker">Fence row nozzles</label>
+            <select class="py-1 px-2 bg-white rounded">
+                <option value="IN">Off</option>
+                <option value="IN">On</option>
             </select>
         </div>
 
+
         <div class="weather-container">
-           <label class="pl-2 text-grey-darker"></label>
+           <!-- <label class="pl-2 text-grey-darker"></label>
            <span class="pl-2 w-24">Start</span>
-           <span class="pl-2 w-24">End</span>
-        </div>
+           <span class="pl-2 w-24">End</span> -->
 
-        <div class="weather-container">
-            <label class="pl-2 text-grey-darker">Commodity</label>
-            <input type="textbox" class="w-24 pl-2 text-gray-darkest rounded py-1 px-2" placeholder="Commodity" value="Soybeans" />
-            <input type="textbox" class="w-24 text-gray-darkest rounded py-1 px-2" placeholder="Commodity" value="Soybeans" />
+           <label class="pl-2 text-grey-darker">&nbsp;</label>
+           <input readonly type="textbox" class="bg-hl-neutral w-24 pl-2 text-gray-darkest rounded py-1 px-2" placeholder="Commodity" value="Beginning" />
+           <input readonly type="textbox" class="bg-hl-neutral w-24 text-gray-darkest rounded py-1 px-2" placeholder="Commodity" value="Ending" />
         </div>
         <div class="weather-container">
-            <label class="pl-2 text-grey-darker">Commodity</label>
-            <input type="textbox" class="w-24 pl-2 text-gray-darkest rounded py-1 px-2" placeholder="Commodity" value="Soybeans" />
-            <input type="textbox" class="w-24 text-gray-darkest rounded py-1 px-2" placeholder="Commodity" value="Soybeans" />
+            <label class="pl-2 text-grey-darker">Wind direction</label>
+            <input type="textbox" class="w-24 pl-2 text-gray-darkest rounded py-1 px-2" placeholder="Commodity" value="sw" />
+            <input type="textbox" class="w-24 text-gray-darkest rounded py-1 px-2" placeholder="Commodity" value="so" />
         </div>
         <div class="weather-container">
-            <label class="pl-2 text-grey-darker">Commodity</label>
-            <input type="textbox" class="w-24 pl-2 text-gray-darkest rounded py-1 px-2" placeholder="Commodity" value="Soybeans" />
-            <input type="textbox" class="w-24 text-gray-darkest rounded py-1 px-2" placeholder="Commodity" value="Soybeans" />
+            <label class="pl-2 text-grey-darker">Wind speed</label>
+            <input type="textbox" class="w-24 pl-2 text-gray-darkest rounded py-1 px-2" placeholder="Commodity" value="10" />
+            <input type="textbox" class="w-24 text-gray-darkest rounded py-1 px-2" placeholder="Commodity" value="16" />
         </div>
-
-
+        <div class="weather-container">
+            <label class="pl-2 text-grey-darker">Temperature</label>
+            <input type="textbox" class="w-24 pl-2 text-gray-darkest rounded py-1 px-2" placeholder="Commodity" value="70" />
+            <input type="textbox" class="w-24 text-gray-darkest rounded py-1 px-2" placeholder="Commodity" value="80" />
+        </div>
+        <div class="data-entry">
+            <label class="text-grey-darker">Commodity</label>
+            <input type="textbox" class="text-gray-darkest rounded py-1 px-2" placeholder="Commodity" value="Soybeans"/>
+         </div>
+         <div class="data-entry">
+            <label class="text-area-label text-grey-darker">Comments</label>
+            <textarea class="text-area text-gray-darkest rounded py-1 px-2"
+                      placeholder="Address">Existing application</textarea>
+         </div>
+         <div class="data-entry">
+            <label class="text-grey-darker">Start time</label>
+            <input type="textbox" class="text-gray-darkest rounded py-1 px-2" placeholder="Customer" value="8:00 AM"/>
+         </div>
+         <div class="data-entry">
+            <label class="text-grey-darker">End time</label>
+            <input type="textbox" class="text-gray-darkest rounded py-1 px-2" placeholder="Customer" value="12:00 AM"/>
+         </div>
+         <div class="data-entry">
+            <label class="text-grey-darker">Row spacing</label>
+            <input type="textbox" class="text-gray-darkest rounded py-1 px-2" placeholder="Customer" value="3"/>
+         </div>
 
       </div>
 

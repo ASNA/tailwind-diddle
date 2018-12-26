@@ -25,6 +25,12 @@ div.form-container {
 
 @media only screen and (min-width : 768px)  {
 
+    div.four-column-container {
+        padding: 3px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
     div.form-container {
         padding: 3px;
         display: grid;
