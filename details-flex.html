@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Tailwind 7.3</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link href="tailwind7.3.css" rel="stylesheet">
+    <link href="breadcrumb.css" rel="stylesheet">
+    <link href="two-column-input.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="bg-hl-neutral">
+    <nav class="flex items-center justify-between flex-wrap bg-hl-secondary p-3">
+        <div class="flex items-center flex-no-shrink text-white mr-6">
+            <img class="mr-4" src="assets/images/HeartlandCoop.png" />
+            <span class="text-hl-grey font-semibold text-xl tracking-tight">Helping farmers produce and market
+                profitably</span>
+        </div>
+        <!-- <div class="block lg:hidden mt-2">
+            <button class="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light 
+                           hover:text-white hover:border-white">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                </svg>
+            </button>
+        </div> -->
+    </nav>
+
+    <!-- <nav class="flex items-center justify-between flex-wrap bg-hl-secondary p-3">
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+            <div class="text-sm lg:flex-grow">
+                <span class="text-lg block mt-2 lg:inline-block lg:inline-block lg:mt0 text-hl-grey-darker mr-4">Customer application record</span>
+                <a href="#responsive-header" class="block mt-2 lg:inline-block lg:mt-0 text-hl-grey hover:text-white mr-4">
+                    Customer/field info
+                </a>
+                <a href="#responsive-header" class="block mt-2 lg:inline-block lg:mt-0 text-hl-grey hover:text-white mr-4">
+                    Map
+                </a>
+                <a href="#responsive-header" class="block mt-2 lg:inline-block lg:mt-0 text-hl-grey hover:text-white mr-4">
+                    Data entry
+                </a>
+                <a href="#responsive-header" class="block mt-2 lg:inline-block lg:mt-0 text-hl-grey hover:text-white mr-8">
+                    Items
+                </a>
+            </div>
+        </nav>
+    </nav> -->
+
+    <div class="w-full block bg-hl-secondary-light p-2">
+        <span class="text-lg font-bold">Customer Application Record</span> &mdash; Location: 11 Work order: 47421
+    </div>
+    
+    <ul class="breadcrumb">
+        <li><a href="#">Customer</a></li>
+        <li><a href="#">Data entry</a></li>
+        <li><a href="#">Items</a></li>
+        <!-- <li><a id="bread-crumb-4" href="#">Camper Vans</a></li>
+        <li><a id="bread-crumb-5" href="#">1989 VW Westfalia Vanagon</a></li> -->
+    </ul>
+
+    <div class="form-container">
+        <div class="panel-left-or-top">
+
+            <div class="flex items-center pr-4 pt-1">
+                <label class="px-4 w-36 text-blue-darker  sm:px-5 sm:w-48 sm:text-grey-darker text-right">Commodity</label>
+                <input type="textbox" class="text-gray-darkest rounded py-1 px-2 flex-grow" placeholder="Commodity" value="Soybeans" />
+            </div>
+            <div class="flex items-center pr-4 pt-1">
+                <label class="px-5 w-48 text-grey-darker text-right">Row spacing</label>
+                <input type="textbox" class="text-gray-darkest rounded py-1 px-2 flex-grow" placeholder="Customer"
+                    value="3" />
+            </div>
+            <div class="flex items-center pr-4 pt-1">
+                <label class="px-5 w-48 text-grey-darker text-right">Start time</label>
+                <input type="textbox" class="text-gray-darkest rounded py-1 px-2 flex-grow" placeholder="Customer"
+                    value="8:00 AM" />
+            </div>
+            <div class="flex items-center pr-4 pt-1">
+                <label class="px-5 w-48 text-grey-darker text-right">End time</label>
+                <input type="textbox" class="text-gray-darkest rounded py-1 px-2 flex-grow" placeholder="Customer"
+                    value="12:00 AM" />
+            </div>
+
+            <!-- Beginning/Ending stuff -->
+            <div class="flex items-center pr-4 justify-center pt-5">
+                <label class="px-5 w-48 text-gray-darker text-right"></label>
+                <input type="textbox" readonly class="bg-hl-neutral w-24 text-gray-darkest rounded py-1 px-2"
+                    placeholder="Commodity" value="Beginning" />
+                <span>&nbsp;&nbsp;</span>
+                <input type="textbox" readonly class="bg-hl-neutral w-24 text-gray-darkest rounded py-1 px-2"
+                    placeholder="Commodity" value="Ending" />
+            </div>
+
+            <div class="flex items-center pr-4 justify-center">
+                <label class="px-5 w-48 text-gray-darker text-right">Wind direction</label>
+                <input type="textbox" class="w-24 text-gray-darkest rounded py-1 px-2" placeholder="Commodity" value="sw" />
+                <span>&nbsp;&nbsp;</span>
+                <input type="textbox" class="w-24 text-gray-darkest rounded py-1 px-2" placeholder="Commodity" value="so" />
+            </div>
+
+            <div class="flex items-center pr-4 justify-center">
+                <label class="px-5 w-48 text-gray-darker text-right">Wind speed</label>
+                <input type="textbox" class="w-24 text-gray-darkest rounded py-1 px-2" placeholder="Commodity" value="10" />
+                <span>&nbsp;&nbsp;</span>
+                <input type="textbox" class="w-24 text-gray-darkest rounded py-1 px-2" placeholder="Commodity" value="16" />
+            </div>
+
+            <div class="flex items-center pr-4 justify-center">
+                <label class="px-5 w-48 text-gray-darker text-right">Wind temperature</label>
+                <input type="textbox" class="w-24 text-gray-darkest rounded py-1 px-2" placeholder="Commodity" value="70" />
+                <span>&nbsp;&nbsp;</span>
+                <input type="textbox" class="w-24 text-gray-darkest rounded py-1 px-2" placeholder="Commodity" value="80" />
+            </div>
+
+            <!-- Selects  -->
+
+            <div class="flex items-center pr-4 justify-center pt-5">
+                <label class="w-24 text-grey-darker">Field</label>
+                <select class="w-24 py-1 px-2 bg-white rounded">
+                    <option class="" value="IN">Rough</option>
+                    <option class="" value="IN">Smooth</option>
+                </select>
+                <div class="w-12">&nbsp;</div>
+                <label class="w-24 text-grey-darker js-end">Trash</label>
+                <select class="w-24 py-1 px-2 bg-white rounded">
+                    <option value="IN">High</option>
+                    <option value="IN">Low</option>
+                </select>
+            </div>
+
+            <div class="flex items-center pr-4 justify-center pt-1">
+                <label class="w-24 text-grey-darker">Moisture</label>
+                <select class="w-24 py-1 px-2 bg-white rounded">
+                    <option value="IN">Wet</option>
+                    <option value="IN">Dry</option>
+                </select>
+                <div class="w-12">&nbsp;</div>
+                <label class="w-24 text-grey-darker">Pest and growth</label>
+                <select class="w-24 py-1 px-2 bg-white rounded">
+                    <option value="IN">PPL</option>
+                    <option value="IN">Light</option>
+                </select>
+            </div>
+
+            <div class="flex items-center pr-4 justify-center pt-1">
+                <label class="w-24 text-grey-darker js-end">Humidity</label>
+                <select class="w-24 py-1 px-2 bg-white rounded">
+                    <option value="IN">High</option>
+                    <option value="IN">Low</option>
+                </select>
+                <div class="w-12">&nbsp;</div>
+                <label class="w-24 text-grey-darker js-end">Nozzles</label>
+                <select class="w-24 py-1 px-2 bg-white rounded">
+                    <option value="IN">Off</option>
+                    <option value="IN">On</option>
+                </select>
+            </div>
+
+            <div class="flex items-start pr-4 pb-4 pt-5">
+                <label class="px-5 w-48 text-grey-darker text-right">Row spacing</label>
+
+                <textarea class="text-area text-gray-darkest rounded py-1 px-2 flex-grow" placeholder="Address">Existing application</textarea>
+            </div>
+
+        </div>
+
+        <div class="panel-right-or-bottom">
+            <div class="flex items-center pr-4">
+                <label class="px-4 w-36 text-blue-darker  sm:px-5 sm:w-48 sm:text-grey-darker text-right">Date applied</label>
+                <input type="textbox" class="text-gray-darkest rounded py-1 px-2 flex-grow" placeholder="Date applied"
+                    value="Date applied" />
+            </div>
+
+            <div class="flex items-center pr-4 pt-1">
+                <label class="px-4 w-36 text-blue-darker  sm:px-5 sm:w-48 sm:text-grey-darker text-right">Acres applied</label>
+                <input type="textbox" class="text-gray-darkest rounded py-1 px-2 flex-grow" placeholder="Till acres"
+                    value="108" />
+            </div>
+            <div class="flex items-center pr-4 pt-1">
+                <label class="px-4 w-36 text-blue-darker  sm:px-5 sm:w-48 sm:text-grey-darker text-right">Nozzle
+                    pressure</label>
+                <input type="textbox" class="text-gray-darkest rounded py-1 px-2 flex-grow" placeholder="Field" value="15" />
+            </div>
+            <div class="flex items-center pr-4 pt-1">
+                <label class="px-4 w-36 text-blue-darker  sm:px-5 sm:w-48 sm:text-grey-darker text-right">Prior product</label>
+                <input type="textbox" class="text-gray-darkest rounded py-1 px-2 flex-grow" placeholder="Traits" value="Product 1" />
+            </div>
+            <div class="flex items-center pr-4 pt-1">
+                <label class="px-4 w-36 text-blue-darker  sm:px-5 sm:w-48 sm:text-grey-darker text-right">Clean in</label>
+                <input type="textbox" class="text-gray-darkest rounded py-1 px-2 flex-grow" placeholder="Field" value="Afternoon" />
+            </div>
+            <div class="flex items-center pr-4 pt-1">
+                <label class="px-4 w-36 text-blue-darker  sm:px-5 sm:w-48 sm:text-grey-darker text-right">Neighboring
+                    fields</label>
+                <input type="textbox" class="text-gray-darkest rounded py-1 px-2 flex-grow" placeholder="Traits" value="Corn" />
+            </div>
+            <div class="flex items-center pr-4 pt-1">
+                <label class="px-4 w-36 text-blue-darker  sm:px-5 sm:w-48 sm:text-grey-darker text-right">Soil</label>
+                <select class="py-1 px-2 bg-white rounded">
+                    <option value="IN">Heavy</option>
+                    <option value="IN">Light</option>
+                </select>
+            </div>
+            <div class="flex items-center pr-4 pt-1">
+                <label class="px-4 w-36 text-blue-darker  sm:px-5 sm:w-48 sm:text-grey-darker text-right">Pest</label>
+                <input type="textbox" class="text-gray-darkest rounded py-1 px-2 flex-grow" placeholder="Traits" value="Pest 1" />
+            </div>
+            <div class="flex items-center pr-4 pt-1">
+                <label class="px-4 w-36 text-blue-darker  sm:px-5 sm:w-48 sm:text-grey-darker text-right">Stage</label>
+                <input type="textbox" class="text-gray-darkest rounded py-1 px-2 flex-grow" placeholder="Traits" value="State 1" />
+            </div>
+            <div class="flex items-center pr-4 pt-1">
+                <label class="px-4 w-36 text-blue-darker  sm:px-5 sm:w-48 sm:text-grey-darker text-right">Height</label>
+                <input type="textbox" class="text-gray-darkest rounded py-1 px-2 flex-grow" placeholder="Traits" value="10" />
+            </div>
+            <div class="flex items-center pr-4 pt-1">
+                <label class="px-4 w-36 text-blue-darker  sm:px-5 sm:w-48 sm:text-grey-darker text-right">Appl Unit</label>
+                <input type="textbox" class="text-gray-darkest rounded py-1 px-2 flex-grow" placeholder="Traits" value="12345" />
+            </div>
+            <div class="flex items-center pr-4 pt-1">
+                <label class="px-4 w-36 text-blue-darker  sm:px-5 sm:w-48 sm:text-grey-darker text-right">Custom
+                    applied by</label>
+                <input type="textbox" class="text-gray-darkest rounded py-1 px-2 flex-grow" placeholder="Traits" value="Ricardo" />
+            </div>
+            <div class="flex items-center pr-4 pt-1">
+                <label class="px-4 w-36 text-blue-darker  sm:px-5 sm:w-48 sm:text-grey-darker text-right">Blended by</label>
+                <input type="textbox" class="text-gray-darkest rounded py-1 px-2 flex-grow" placeholder="Traits" value="Ricardo" />
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- display: flex; flex: end (which is left justified); margin-left/right: -3; margin-bont: 6;-->
+    <div class="buttons-container p-3 flex justify-end" style="border: 1px purple solid">
+        <div class="pr-2">
+            <a href="customer.html" class="anchor-btn anchor-btn-primary">Continue3</a>
+        </div>
+
+        <div class="pr-2">
+            <a href="customer.html" class="anchor-btn anchor-btn-primary">Continue2</a>
+        </div>
+
+        <div class="">
+            <a href="customer.html" class="anchor-btn anchor-btn-primary">Continue1</a>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+
+</html>

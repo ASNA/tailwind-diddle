@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Tailwind 7.3</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link href="tailwind7.3.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-hl-neutral">
+    <div id="info"></div>
+
+    <!-- <div class="w-24 h-24 bg-purple ty:bg-orange sm:bg-red md:bg-green lg:bg-yellow xl:bg-blue"> -->
+    <div class="w-24 h-24 bg-purple md:bg-yellow">
+    </div>
+
+    <div class="flex items-end sm:items-center pr-4">
+        <label class="px-4 w-36 text-blue-darker sm:text-grey-darker text-right">Commodity</label>
+        <input type="textbox" class="text-gray-darkest rounded py-1 px:4 sm:px-2 flex-grow sm:text-red" placeholder="Commodity" value="Soybeans" />
+    </div>
+
+
+<script>
+
+    window.addEventListener("resize", function() {
+        var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+        console.log("Resource conscious resize callback!");
+        let info = document.getElementById('info');
+        info.innerHTML = `width: ${w} height: ${h}`;
+    });        
+
+        var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+        console.log("Resource conscious resize callback!");
+        let info = document.getElementById('info');
+        info.innerHTML = `width: ${w} height: ${h}`;
+
+</script>
+
+</body>
+
+
+</html>

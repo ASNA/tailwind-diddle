@@ -49,8 +49,8 @@ let colors = {
   'hl-grey': '#4c4d4f',
   'hl-grey-light': '#98999b',
   'hl-brand': '#820024',
-  'hl-secondary': '#4dc0b5',
-  'hl-secondary-light': '#72cdc4',
+  'hl-secondary': '#dedba0',
+  'hl-secondary-light': '#d1cd7a',
   'hl-neutral': '#f5f4e2',
 
   'black': '#22292f',
@@ -174,6 +174,7 @@ module.exports = {
   */
 
   screens: {
+    'ty': '375px',  
     'sm': '576px',
     'md': '768px',
     'lg': '992px',
@@ -499,10 +500,12 @@ module.exports = {
     '10': '2.5rem',
     '12': '3rem',
     '16': '4rem',
+    '20': '5rem',
     '24': '6rem',
     '32': '8rem',
     '48': '12rem',
     '64': '16rem',
+    
     '1/2': '50%',
     '1/3': '33.33333%',
     '2/3': '66.66667%',

@@ -23,7 +23,7 @@ ul.breadcrumb {
   .breadcrumb {
         list-style: none;
         overflow: hidden;
-        font: 18px Helvetica, Arial, Sans-Serif;
+        font: 12px Helvetica, Arial, Sans-Serif;
         padding: 0;
     }
 
@@ -34,7 +34,7 @@ ul.breadcrumb {
     .breadcrumb li a {
       color: var(--breadcrumb-text-color);
       text-decoration: none;
-      padding: 10px 0 10px 55px;
+      padding: 8px 0 8px 55px;
       background: var(--breadcrumb-base-background-color);
       position: relative;
       display: block;

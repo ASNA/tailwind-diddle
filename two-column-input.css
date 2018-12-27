@@ -1,7 +1,6 @@
 
 div.form-container {
     margin-top: 2rem;
-    /* border: solid 1px red; */
 }
 
 @media only screen and (max-width : 768px)  {
@@ -20,21 +19,24 @@ div.form-container {
         margin-top: 1rem;
         grid-area: bottom;
     }
+
+    div.panel-left-or-top {
+        grid-area: top;
+    }
+
+    div.panel-right-or-bottom {
+        margin-top: 1rem;
+        grid-area: bottom;
+    }
+
 }
 
-
 @media only screen and (min-width : 768px)  {
-
     div.four-column-container {
         padding: 3px;
         display: grid;
         grid-template-columns: .7fr 1fr .7fr 1fr;
         align-items: center;
-    }
-
-    .js-end {
-        justify-self: end;
-        padding-right: .5rem;
     }
 
     div.form-container {
@@ -52,26 +54,13 @@ div.form-container {
         padding-right: 6px;
     }
 
-    div.data-entry {
-        padding: 2px;
-        padding-right: 2rem;
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-        align-items: center;
+    div.panel-left-or-top {
+        padding-right: 6px;
+        border-right: 1px solid darkgrey;
     }
 
-    div.data-entry textarea.text-area {
-        min-height: 4rem;
-        resize: none;
-        overflow: hidden;
-    }
-
-    div.data-entry .text-area-label {
-        align-self: start;
-    }
-
-    .data-entry label {
-        margin-left: .5rem;
+    div.panel-right-or-bottom {
+        padding-right: 6px;
     }
 
     .input-error {
@@ -79,12 +68,4 @@ div.form-container {
         padding-left: 8px;
         display: none;
     }
-
-    div.weather-container {
-        padding: 2px;
-        display: grid;
-        grid-template-columns: 1fr .8fr .8fr;
-        align-items: center;
-    }
-
 }
